@@ -1,12 +1,13 @@
 {
   "name": "semantic-release-test-add-123",
   "version": "0.1.0",
-  "main": "../dist/index.js.mjs",
+  "main": "dist/index.js.mjs",
   "types": "dist/index.d.ts",
   "files": [
-    "../dist"
+    "dist"
   ],
   "scripts": {
+    "prepare": "vite build -d",
     "dev": "vite",
     "build": "tsc && vite build -d",
     "preview": "vite preview",
