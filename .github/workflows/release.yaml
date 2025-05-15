@@ -6,7 +6,7 @@ on:
       - closed
 
 jobs:
-  install:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,6 +22,8 @@ jobs:
 
       - name: Publish
         run: pnpm changeset publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Commit & push version updates
         run: git add . && git commit -m "Updated versions" && git push
