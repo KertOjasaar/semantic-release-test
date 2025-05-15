@@ -10,7 +10,7 @@
     "dev": "vite",
     "build": "tsc && vite build -d",
     "preview": "vite preview",
-    "publish": "pnpm version patch && pnpm publish"
+    "release": "pnpm version patch && pnpm publish"
   },
   "devDependencies": {
     "typescript": "~5.8.3",
