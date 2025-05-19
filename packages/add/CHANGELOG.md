@@ -1,5 +1,11 @@
 # semantic-release-test-add-123
 
+## 0.3.0
+
+### Minor Changes
+
+- Fixed some fictional issue
+
 ## 0.2.0
 
 ### Minor Changes
