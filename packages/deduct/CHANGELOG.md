@@ -1,5 +1,12 @@
 # semantic-release-test-deduct-123
 
+## 0.2.0
+
+### Minor Changes
+
+- 1ac2c84: Removed only allowing positive numbers as a result
+- 4400122: Removed logging
+
 ## 0.1.0
 
 ### Minor Changes
