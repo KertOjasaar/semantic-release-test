@@ -3,7 +3,10 @@ name: Release
 on:
   pull_request:
     types:
-      - closed
+      - opened
+      - synchronize
+      - reopened
+      - edited
 
 jobs:
   release:
@@ -17,13 +20,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Version
-        run: pnpm changeset version
-
-      - name: Publish
-        run: pnpm changeset publish
+      - name: Create PR
+        uses: changesets/action@v1
+        with:
+          publish: pnpm changeset publish
+          version: pnpm changeset version
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Commit & push version updates
-        run: git add . && git commit -m "Updated versions" && git push
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
