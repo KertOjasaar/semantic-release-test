@@ -1,5 +1,19 @@
 # semantic-release-test-deduct-123
 
+## 1.0.0
+
+### Major Changes
+
+- 1450bb1: Changed deduct order
+
+### Minor Changes
+
+- 4684215: Do the thing
+
+### Patch Changes
+
+- 57ba93d: Fixed issue
+
 ## 0.1.0
 
 ### Minor Changes
