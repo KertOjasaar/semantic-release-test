@@ -1,5 +1,11 @@
 # semantic-release-test-deduct-123
 
+## 1.0.1
+
+### Patch Changes
+
+- 3136495: Fixed deduct order
+
 ## 1.0.0
 
 ### Major Changes
